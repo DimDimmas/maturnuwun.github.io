@@ -351,6 +351,7 @@ body{
     padding: 5%;
     background: url('../img/banner/footer.jpg');
     background-size: cover;
+    overflow: hidden;
 }
 
 .footer-maps{
