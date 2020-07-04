@@ -1,6 +1,30 @@
 @font-face{
     font-family: montserrat-reg;
-    src: url('../font/Montserrat-Regular.ttf');
+    src: url(../font/Montserrat-Regular.ttf);
+}
+
+@font-face{
+    
+    font-family: coco;
+    src: url(../font/CocoGothic_trial.ttf);
+}
+
+@font-face{
+    font-family: code;
+    src: url(../font/CODE-Bold.otf);
+}
+
+a, a:hover{
+    text-decoration: none !important;
+}
+
+hr{
+    border-color: #b33939 !important;
+    position: relative;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -9,9 +33,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 #navbar{
-    padding: 20px 10px;
+    padding: 20px 20px;
     transition: 0.5s !important;
+    background-color: #333;
 }
 
 .title-banner{
@@ -26,11 +52,11 @@ body{
     font-family: 'montserrat-reg';
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:960px){
     .title-banner{
-        left: 90px;
-        top: -180px;
-        font-size: 10px;
+        left: 220px;
+        top: -300px;
+        font-size: 20px;
     }
 
     nav img{
@@ -46,6 +72,7 @@ body{
         width: 20px !important;
     }
 }
+
 
 /* nav */
 .nav-item a{
@@ -64,4 +91,235 @@ body{
 
 .dropdown-menu{
     background-color: #333333 !important;
+}
+
+/* profile */
+.profile{
+    margin-left: 5%;
+    width: 90%;
+    height: 540px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.profile-image{
+    width: 50%;
+    height: inherit;
+    float: left;
+}
+
+.profile1{
+    width: 80%;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+
+.profile2{
+    width: 30%;
+    position: relative;
+    left: 450px;
+    top: -240px;
+    z-index: 3;
+}
+
+.profile-box{
+    color: rgb(73, 73, 73);
+    width: 45%;
+    text-align: center;
+    float: left;
+    margin-left: 5%;
+    margin-top: 130px;
+}
+
+.kotak{
+    z-index: -1;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: #b33939;
+    top: -63px;
+    right: 60px;
+    float: right;
+}
+
+
+@media screen and (max-width:960px){
+    .profile-box{
+        margin-top: 0px;
+    }
+
+    .profile2{
+        width: 30%;
+        position: relative;
+        top: -150px;
+        left: 250px;
+        z-index: 3;
+    }
+
+    .kotak{
+        right: 38px;
+    }
+}
+
+/* tems */
+.team{
+    width: 100%;
+    height: 400px;
+    background: url('../img/team/team.jpg') no-repeat;
+    margin-top: 100px;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'coco';
+}
+
+.team span{
+    position: relative;
+    top: 80px;
+    left: 100px;
+}
+
+.team p{
+    width: 50%;
+    position: relative;
+    top: 20%;
+    left: 7%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* product */
+.product{
+    width: 100%;
+    height: 700px;
+    background-color: #b33939;
+}
+
+.product-content{
+    width: 50%;
+    height: 350px;
+    background-color: aliceblue;
+    float: left;
+    overflow: hidden;
+}
+
+.product-content img{
+    width: 150%;
+}
+
+.product-overlay{
+    width: 30%;
+    height: 50px;
+    background-color: rgba(179, 57, 57, 0.6);
+    z-index: 1;
+    position: relative;
+    top: -180px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.product-content a{
+    height: 350px;
+}
+
+@media screen and (max-width:960px){
+    .product-content{
+        width: 100%;
+    }
+
+    .product-content img{
+        width: 100%;
+    }
+
+    .product-overlay{
+        top: -125px;
+    }
+}
+
+/* reference */
+.reference{
+    width: 100%;
+    height: 500px;
+    padding-top: 100px;
+}
+
+.reference-boximage{
+    padding: 5%;
+    width: 100%;
+    height: 500px;
+}
+
+.reference-title{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    font-family: 'coco';
+}
+
+.reference-title span{
+    position: relative;
+    top: 40%;
+}
+
+.boximage-image{
+    width: 200px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+}
+
+.boximage-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.reference-overlay{
+    position: relative;
+    top: -100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(179, 57, 57, 0.8);
+    color: #fff;
+}
+
+.boximage-image a:hover .reference-overlay{
+    opacity: 1;
+}
+
+.boximage-text {
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.reference-readmore{
+    width: 200px;
+    height: 200px;
+    background-color: #b33939;
+    float: left;
+    text-align: center;
+}
+
+@media screen and (max-width:960px){
+    .reference{
+        overflow: visible;
+    }
+
+    .reference-title, .reference-boximage{
+        clear: both;
+        width: 100%;
+    }
 }
