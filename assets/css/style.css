@@ -52,7 +52,7 @@ body{
     font-family: 'montserrat-reg';
 }
 
-@media screen and (max-width:960px){
+@media screen and (max-width:480px){
     .title-banner{
         left: 220px;
         top: -300px;
@@ -144,7 +144,7 @@ body{
 }
 
 
-@media screen and (max-width:960px){
+@media screen and (max-width:480px){
     .profile-box{
         margin-top: 0px;
     }
@@ -223,7 +223,7 @@ body{
     height: 350px;
 }
 
-@media screen and (max-width:960px){
+@media screen and (max-width:480px){
     .product-content{
         width: 100%;
     }
@@ -313,7 +313,7 @@ body{
     text-align: center;
 }
 
-@media screen and (max-width:960px){
+@media screen and (max-width:480px){
     .reference{
         overflow: visible;
     }
