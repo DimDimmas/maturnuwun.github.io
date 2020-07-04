@@ -37,7 +37,7 @@ body{
 #navbar{
     padding: 20px 20px;
     transition: 0.5s !important;
-    background-color: #333;
+    background: transparent; position: fixed; z-index: 99; width: 100%;
 }
 
 .title-banner{
@@ -52,7 +52,7 @@ body{
     font-family: 'montserrat-reg';
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:640px){
     .title-banner{
         left: 220px;
         top: -300px;
@@ -65,7 +65,7 @@ body{
 
     #navbar{
         background-color: #333 !important;
-        padding: 10px;
+        padding: 0px;
     }
 
     .navbar-toggler-icon{
@@ -144,16 +144,22 @@ body{
 }
 
 
-@media screen and (max-width:480px){
+@media screen and (max-width:640px){
     .profile-box{
         margin-top: 0px;
+        width: 100%;
+        clear: both;
+    }
+
+    .profile-image{
+        clear: both;
+        width: 100%;
     }
 
     .profile2{
         width: 30%;
         position: relative;
         top: -150px;
-        left: 250px;
         z-index: 3;
     }
 
@@ -223,7 +229,7 @@ body{
     height: 350px;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:640px){
     .product-content{
         width: 100%;
     }
@@ -313,7 +319,21 @@ body{
     text-align: center;
 }
 
-@media screen and (max-width:480px){
+.more-reference{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 25%;
+    color: #fff;
+    font-size: 50px;
+    transition: 0.5s;
+}
+
+.more-reference:hover{
+    color: rgb(187, 187, 187);
+}
+
+@media screen and (max-width:640px){
     .reference{
         overflow: visible;
     }
@@ -322,4 +342,57 @@ body{
         clear: both;
         width: 100%;
     }
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 400px;
+    padding: 5%;
+    background: url('../img/banner/footer.jpg');
+    background-size: cover;
+}
+
+.footer-maps{
+    width: 30%;
+    height: 300px;
+    background-color: #fff;
+    float: right;
+}
+
+.footer-title{
+    width: 65%;
+    height: 300px;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-family: 'coco';
+}
+
+.footer-cont{
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    margin: 20px;
+}
+
+.footer-icon{
+    position: relative;
+    left: 40%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+}
+
+.copyright{
+    width: 100%;
+    padding: 5px 100px;
+    background-color: rgb(26, 26, 26);
+    color: rgb(138, 138, 138);
+    font-size: 12px;
 }
