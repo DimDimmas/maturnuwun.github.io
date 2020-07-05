@@ -168,7 +168,76 @@ body{
     }
 }
 
-/* tems */
+/* history */
+.history-wrapper{
+    width: 100%;
+    height: 900px;
+    /* background-color: red; */
+}
+.history-picture-wrap{
+    width: 700px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
+}
+
+.history-tag{
+    width: 35% !important;
+    height: 50px;
+    background-color: #000;
+    opacity: 80%;
+    z-index: 99;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    margin-top: -25%;
+}
+
+.history-picture{
+    width: 33%;
+    margin-right: -5px;
+    z-index: -9;
+}
+
+.history-text-wrap{
+    width: 800px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;; */
+    color: #737373;
+    /* background-color: blue; */
+}
+.history-text-wrap>hr{
+    width: 70%;
+    border-color: #333 !important;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 8px;
+  }
+  
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+/* teams */
 .team{
     width: 100%;
     height: 400px;
@@ -247,7 +316,6 @@ body{
 .reference{
     width: 100%;
     height: 500px;
-    padding-top: 100px;
 }
 
 .reference-boximage{
@@ -330,7 +398,7 @@ body{
 }
 
 .more-reference:hover{
-    color: rgb(187, 187, 187);
+    color: #fff;
 }
 
 @media screen and (max-width:640px){
@@ -396,4 +464,28 @@ body{
     background-color: rgb(26, 26, 26);
     color: rgb(138, 138, 138);
     font-size: 12px;
+}
+
+/* video */
+.video{
+    width: 80%;
+    height: 500px;
+    position: relative;
+    left: 10%;
+}
+
+.video-title{
+    position: relative;margin-top: 10%;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-family: 'coco';
+}
+
+.video-box{
+    margin: 5%;
+    width: 40%;
+    height: 300px;
+    border: 1px solid #c0c0c0;
+    float: left;
 }
