@@ -52,28 +52,6 @@ body{
     font-family: 'montserrat-reg';
 }
 
-@media screen and (max-width:640px){
-    .title-banner{
-        left: 220px;
-        top: -300px;
-        font-size: 20px;
-    }
-
-    nav img{
-        width: 100px;
-    }
-
-    #navbar{
-        background-color: #333 !important;
-        padding: 0px;
-    }
-
-    .navbar-toggler-icon{
-        width: 20px !important;
-    }
-}
-
-
 /* nav */
 .nav-item a{
     color: #fff !important;
@@ -108,30 +86,6 @@ body{
     margin-top: 130px;
     margin-right: 7%;
     color: #fff;
-}
-
-@media screen and (max-width:640px){
-    .profile-box{
-        margin-top: 0px;
-        width: 100%;
-        clear: both;
-    }
-
-    .profile-image{
-        clear: both;
-        width: 100%;
-    }
-
-    .profile2{
-        width: 30%;
-        position: relative;
-        top: -150px;
-        z-index: 3;
-    }
-
-    .kotak{
-        right: 38px;
-    }
 }
 
 /* history */
@@ -268,20 +222,6 @@ body{
     height: 350px;
 }
 
-@media screen and (max-width:640px){
-    .product-content{
-        width: 100%;
-    }
-
-    .product-content img{
-        width: 100%;
-    }
-
-    .product-overlay{
-        top: -125px;
-    }
-}
-
 /* reference */
 .banner-reference{
     width: 100%;
@@ -295,9 +235,9 @@ body{
 }
 
 .reference-boximage{
-    padding: 5%;
+    padding: 11%;
     width: 100%;
-    height: 500px;
+    height: 1200px;
 }
 
 .reference-title{
@@ -320,6 +260,7 @@ body{
     height: 200px;
     float: left;
     overflow: hidden;
+    margin: 5px;
 }
 
 .boximage-image img{
@@ -337,7 +278,7 @@ body{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(179, 57, 57, 0.8);
+    background-color: rgba(33, 33, 33, 0.8);
     color: #fff;
 }
 
@@ -356,39 +297,6 @@ body{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.reference-readmore{
-    width: 200px;
-    height: 200px;
-    background-color: #b33939;
-    float: left;
-    text-align: center;
-}
-
-.more-reference{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    top: 25%;
-    color: #fff;
-    font-size: 50px;
-    transition: 0.5s;
-}
-
-.more-reference:hover{
-    color: #fff;
-}
-
-@media screen and (max-width:640px){
-    .reference{
-        overflow: visible;
-    }
-
-    .reference-title, .reference-boximage{
-        clear: both;
-        width: 100%;
-    }
 }
 
 /* footer */
@@ -495,7 +403,7 @@ body{
 .news-wrapper{
     margin-top: 100px;
     width: 100%;
-    height: 550px;
+    height: 2500px;
     /* background: red; */
 }
 
