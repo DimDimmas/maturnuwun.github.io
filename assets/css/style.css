@@ -95,53 +95,20 @@ body{
 
 /* profile */
 .profile{
-    border: 1px solid rgb(190, 190, 190);
-    margin-left: 5%;
-    width: 90%;
-    overflow: hidden;
-    background-color: #fff;
-}
-
-.profile-image{
-    width: 50%;
-    height: inherit;
-    float: left;
-}
-
-.profile1{
-    width: 80%;
-    position: relative;
-    z-index: 1;
-    float: left;
-}
-
-.profile2{
-    width: 30%;
-    position: relative;
-    left: 450px;
-    top: -240px;
-    z-index: 3;
+    width: 100%;
+    height: 500px;
+    background: url('../img/profile/banner.jpg');
 }
 
 .profile-box{
     color: rgb(73, 73, 73);
-    width: 50%;
+    width: 45%;
     text-align: center;
-    float: left;
-    margin-top: 130px;
-}
-
-.kotak{
-    z-index: -1;
-    position: relative;
-    width: 70px;
-    height: 70px;
-    background-color: #b33939;
-    top: -63px;
-    right: 60px;
     float: right;
+    margin-top: 130px;
+    margin-right: 7%;
+    color: #fff;
 }
-
 
 @media screen and (max-width:640px){
     .profile-box{
@@ -193,6 +160,7 @@ body{
     color: #fff;
     position: relative;
     margin-top: -25%;
+    left: 32%;
 }
 
 .history-picture{
@@ -214,10 +182,14 @@ body{
 }
 .history-text-wrap>hr{
     border: 1.5px solid coral;
-    width: 90px;
+    width: 300px;
     position: relative;
     z-index: 9;
     transform: rotate(-90deg);
+    border-color: rgb(146, 146, 146) !important;
+    float: left; 
+    top: -120%;
+    left: 30%;
 }
 
 .history-list{
