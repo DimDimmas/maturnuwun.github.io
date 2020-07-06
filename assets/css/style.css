@@ -577,7 +577,7 @@ body{
     right: 0;
   }
 
-  @media screen and (max-width: 460px){
+  @media screen and (max-width: 500px){
     /* slider */
     .nivoSlider{
         height: 300px !important;
