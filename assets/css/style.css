@@ -289,11 +289,25 @@ body{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
+    background-color: rgba(36, 36, 36, 0.8);
+    color: #fff;
+}
+
+.reference-overlayimg{
+    position: relative;
+    top: -100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
     background-color: rgba(255, 255, 255, 1);
     color: #fff;
 }
 
-.boximage-image a:hover .reference-overlay{
+.boximage-image a:hover .reference-overlay, .boximage-image a:hover .reference-overlayimg{
     opacity: 1;
 }
 
