@@ -121,7 +121,7 @@ body{
     width: 235px;
     height: 230px;
     margin-top: 2%;
-    font-size: 20px;
+    font-size: 24px;
     color: #999;
     /*background: blue;*/
    }
@@ -786,6 +786,7 @@ body{
     width: 100%;
     /* background-color: brown; */
     float: left;
+    margin-top: 20px;
 }
 
   @media screen and (max-width: 480px){
