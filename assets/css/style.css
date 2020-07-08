@@ -298,8 +298,9 @@ body{
 /* reference */
 .banner-reference{
     width: 100%;
-    height: 700px;
-    background: url('../img/reference/banner.jpg');
+    height: 500px;
+    background: url('../img/reference/banner.jpg') no-repeat;
+    background-size: cover;
 }
 
 .reference{
@@ -520,7 +521,7 @@ body{
 /* News */
 .banner-news{
     width: 100%;
-    height: 700px;
+    height: 500px;
     background: url('../img/news/banner.jpg');
 }
 
@@ -663,13 +664,13 @@ body{
   /* montair */
 .banner-product{
     width: 100%;
-    height: 650px;
-    background-size: cover;
+    height: 500px;
     text-transform: capitalize;
 }
 
 #montair-product{
     background: url('../img/banner/bannerbaru.jpg') no-repeat;
+    background-size: cover;
 }
 
 .product-wrapper{
@@ -798,7 +799,8 @@ body{
 
 /* firepro */
 #firepro-product{
-    background: url("../img/firepro/banner.jpg");
+    background: url("../img/banner/bannerbaru2.jpg") no-repeat;
+    background-size: cover;
 }
 
 #firepro-desc{
