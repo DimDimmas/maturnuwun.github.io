@@ -724,6 +724,7 @@ body{
     text-align: center;
     text-transform: capitalize;
     clear: both;
+    font-size: 15px;
     color: #333 !important;
 }
 
