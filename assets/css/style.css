@@ -493,7 +493,7 @@ body{
 .news-wrapper{
     margin-top: 100px;
     width: 100%;
-    height: 2500px;
+    display: inline-block;
     /* background: red; */
 }
 
@@ -511,7 +511,7 @@ body{
 .news-content{
     margin-top: 100px;
     width: 1200px;
-    height: 550px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     /* background-color: blue;   */
