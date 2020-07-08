@@ -96,9 +96,70 @@ body{
 }
 
 /* visimisi */
-.vision{
+/*misi*/
+.misi{
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    color: #000;
+    padding: 30px 0 0 25px;
+    position: relative;
+    background: #fff;
+   }
+  
+   .visi {
+    width: 780px;
+    height: 280px;
+    /*background: #000;*/
+    position: relative;
+    margin-top: -1.5%;
+    text-align: center;
+    left: 25%;
+   }
+  
+   .visi_text {
+    width: 235px;
+    height: 230px;
+    margin-top: 2%;
+    color: #999;
+    /*background: blue;*/
+   }
+  
+   .visi_text h4 {
+    font-size: 21px;
+    color: #b33939;
+    margin-bottom: 5%;
+   }
+  
+   .next{
+    width: 110px;
+    height: 50px;
+    /*background: red;*/
+    margin-top: 48px;
+    float: right;
+   }
+  
+   .about_single {
+    width: 300px;
+    height: 100%;
+    float: left;
+    margin-right: 9%;
+    /*background: red;*/
+   }
+  
+   .icon_holder {
+    width: 55px;
+    height: 40px;
+    /*background: #000;*/
+    position: relative;
+    left: 26%;
+   }
 
-}
+   .icon-fav{
+       font-size: 60px;
+       color: #b33939;
+   }
+  
 
 /* history */
 .history-wrapper{
@@ -270,6 +331,7 @@ body{
 .boximage-image{
     width: 200px;
     height: 200px;
+    overflow: hidden;
     float: left;
     margin: 5px;
 }
@@ -640,7 +702,8 @@ body{
 .banner-montair{
     width: 100%;
     height: 650px;
-    background: url('../img/banner/bannerbaru.jpg');
+    background: url('../img/banner/bannerbaru.jpg') no-repeat;
+    background-size: cover;
     text-transform: capitalize;
 }
 
