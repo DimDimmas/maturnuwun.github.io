@@ -263,36 +263,66 @@ body{
 /* product */
 .product{
     width: 100%;
-    height: 700px;
-    background-color: #b33939;
+    display: inline-block;
+    background-color: #181818;
+    margin-bottom: 100px;
+    color: #fff !important;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.product hr{
+    width: 10%;
+    border-color: #fff !important;
 }
 
 .product-content{
     width: 50%;
     height: 350px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     float: left;
     overflow: hidden;
 }
 
 .product-content img{
-    width: 150%;
+    width: fit-content;
 }
 
 .product-overlay{
-    width: 30%;
+    display: inline;
     height: 50px;
     background-color: rgba(179, 57, 57, 0.6);
     z-index: 1;
     position: relative;
-    top: -180px;
+    top: -40px;
     padding: 10px 20px;
     color: #fff;
     font-size: 25px;
 }
 
 .product-content a{
+    width: 100%;
     height: 350px;
+    text-align: left;
+}
+
+.firepro-hover{
+    opacity: 0;
+    position: relative;
+    top: -111%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+.product-content:hover .firepro-hover{
+    opacity: 1;
 }
 
 /* reference */
@@ -729,25 +759,29 @@ body{
     color: #333 !important;
 }
 
-.montair-advantage-desc{
+.product-advantage-desc{
     position: relative;
     left: 7%;
     width: 35%;
-    height: 700px;
     float: left;
     margin: 0% 5% 0% 5%;
     color: rgb(90, 90, 90);
     /* border: 1px solid black; */
 }
 
-.montair-advantage-desc p, .montair-advantage-desc li{
+#montair-adv{
+    height: 700px;
+}
+
+.product-advantage-desc p, .product-advantage-desc li{
     text-align: justify;
     margin-top: 10px;
     text-transform: none;
 }
 
-#adv-desc-bot{
+#montair-adv-bot{
     left: 30%;
+    height: 700px;
 }
 
 .montair-desc-logo{
@@ -776,6 +810,12 @@ body{
 
 .montair-certificate-logo img{
     width: 100%;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.montair-certificate-logo:hover img{
+    filter: grayscale(0%);
 }
 
 .montair-certificate-logo:hover .montair-certificate-logo-overlay{
@@ -818,8 +858,15 @@ body{
     margin: 10px;
 }
 
+
+.firepro-certificate-logo:hover img{
+    filter: grayscale(0%);
+}
+
 .firepro-certificate-logo img{
     width: 100%;
+    filter: grayscale(100%);
+    transition: 0.5s;
 }
 
 .firepro-certificate{
@@ -836,6 +883,48 @@ body{
     width: 200px;
     top: 80px;
     left: -60px;
+}
+
+#firepro-adv{
+    left: 30%;
+    height: auto;
+}
+
+.firepro-leaf{
+    width: 100%;
+    height: 300px;
+    background: url(../img/firepro/banner-leaf.jpg);
+}
+
+.firepro-leaf-wrapper{
+    position: relative;
+    left: 13%;
+    /* background-color: #f4511e; */
+    width: 1000px;
+    height: inherit;
+}
+
+.leaf-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 4px solid #fff;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 5%;
+    padding: 10px;
+    margin-left: 15%;
+}
+
+.firepro-leaf-wrapper p{
+    float: left;
+    width: 500px;
+    color: #fff !important;
+    text-align: justify;
+    margin-top: 4%;
+    margin-left: 5%;
 }
 
   @media screen and (max-width: 480px){
