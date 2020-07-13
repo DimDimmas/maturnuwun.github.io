@@ -949,6 +949,7 @@ body{
     overflow: hidden;
     position: relative;
     /* border: 1px solid #fff; */
+    background-color: #151515;
 }
 
 .firepro-unit-img img{
@@ -964,7 +965,7 @@ body{
     width: 40%;
     margin-left: 2%;
     height: 100%;
-    color: #333 !important;
+    color: #fff !important;
     text-align: left;
     font-size: 15px;
 }
