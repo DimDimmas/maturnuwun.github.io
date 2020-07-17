@@ -1530,6 +1530,12 @@ body{
     border-color: #4080aa !important;
 }
 
+.bg-multidenco{
+    width: 100%;
+    background: url(../img/dencohappel/bg-multi.jpg) no-repeat;
+    background-size: cover;
+}
+
 /* -------------------------------------------------------------------------------------------- */
 
   @media screen and (max-width: 480px){
