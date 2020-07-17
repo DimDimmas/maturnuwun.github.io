@@ -33,6 +33,7 @@ html{
 
 *{ 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 body{
@@ -164,7 +165,7 @@ body{
 /* history */
 .history-wrapper{
     width: 100%;
-    height: 750px;
+    display: block;
     /* background-color: red; */
 }
 .history-picture-wrap{
@@ -215,19 +216,21 @@ body{
     transform: rotate(-90deg);
     border-color: rgb(146, 146, 146) !important;
     float: left; 
-    top: -120%;
+    top: -170%;
     left: 30%;
 }
 
 .history-list{
     width: 350px ;
-    height: 250px;
+    display: block;
+
+    /* height: 250px; */
     /* background: blue;  */
     float: left;
     margin-left: 30px;
 }
 
-.history-list>h {
+.history-list>h1 {
     font-weight: bold;
 }
 .history-list>li {
@@ -528,12 +531,13 @@ body{
 .banner-news{
     width: 100%;
     height: 500px;
-    background: url('../img/news/banner.jpg');
+    background: url('../img/gallery/banner.jpg');
 }
 
 .news-wrapper{
     margin-top: 100px;
     width: 100%;
+    padding: 5% 9%;
     display: inline-block;
     /* background: red; */
 }
@@ -549,123 +553,40 @@ body{
     color: #fff;
 }
 
-.news-content{
-    margin-top: 100px;
-    width: 1200px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    /* background-color: blue;   */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
 }
 
-.news-content>p{
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    /* margin-left: 30px; */
-    text-align: center;
-}
-
-.news-content>hr{
-    border: 1.5px solid coral;
-    width: 90px;
-    margin-top: -20px;
-}
-
-.news-image{
-    width: 500px !important;
-    height: 400px;
+.gallery-item {
     float: left;
-    margin-left: 65px;
-    margin-bottom: 50px;
-    /* background: #000; */
+    width: 250px;
+	height: 250px;
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
 }
 
-.image-news{
-    width: 100%;
-    height: 300px;
+.gallery-image {
+	/* display: block; */
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
 }
 
-.news-date{
-    width: 100px;
-    height: 100px;
-    background-color: #000;
-    text-align: center;
-    padding-top: 20px;
-    color: #fff;
-     font-size: 1em; 
-    font-weight: 500;
-    float: left;
-    /* opacity: 80%; */
+.gallery-image:hover {
+	transform: scale(1.15);
 }
 
-.news-date>p{
-    font-size: 1.5em;
-    margin-bottom: -3px;
-}
 
-.news-title{
-    width: 390px;
-    height: 100px;
-    color: #333;
-    font-size: 18px;
-    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
-    margin-left: 10px;
-    padding-top: 8px;
-    float: right;
-    position: relative;
-  
-}
-.news-title>h5 {
-    margin-top: -6px;
-    font-size: 14px;
-}
-
-.news-title>a {
-    text-decoration: none;
-}
-
-.button {
-    border-radius: 4px;
-    background-color: #f4511e;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 15px;
-    padding: 10px;
-    width: 150px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.button:hover span {
-    padding-right: 25px;
-}
-
-.button:hover span:after {
-    opacity: 1;
-    right: 0;
-}
 
   /* montair */
 .banner-product{
@@ -763,6 +684,7 @@ body{
 }
 
 .montair-certificate{
+    clear: both;
     width: 100%;
     height: 300px;
     /* background-color: #b33939; */
@@ -790,24 +712,6 @@ body{
     filter: grayscale(0%);
 }
 
-.montair-certificate-logo:hover .montair-certificate-logo-overlay{
-    opacity: 1;
-}
-
-.montair-certificate-logo-overlay{
-    position: relative;
-    overflow: hidden;
-    top: -100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: inherit;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-}
 
 /* firepro */
 #firepro-product{
@@ -1108,13 +1012,18 @@ body{
 
 .card{
     float: left;
+    box-sizing: border-box;
     margin: 2%;
     width: 350px;
-    transition: 1s;
+    transition: all .3s .15s;
+    /* transition: 0.5s; */
+    box-shadow: 0 15px 40px 0 rgba(166,173,201,.2),0 5px 10px 0 rgba(154,160,185,.05);
 }
 
 .card:hover{
-    box-shadow: 1px 1px 5px rgb(185, 185, 185);
+    transition: all .3s 0s;
+    transform: translateY(5px);
+    box-shadow: 0 3px 20px -8px rgba(166,173,201,.5),0 1px 5px 0 rgba(154,160,185,.15),0 1px 5px -3px rgba(154,160,185,.6);
 }
 
 .card-body hr{
@@ -1491,6 +1400,100 @@ body{
   }
 }
 
+/* denco */
+#denco{
+    background: url(../img/banner/banner3.jpg) no-repeat;
+    background-size: cover;
+}
+
+.denco-trange{
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+    display: inline-block;
+    background-color: #4080aa;
+    margin-bottom: 100px;
+}
+
+.denco-trange hr{
+    border-color: #fff !important;
+}
+
+.denco-title{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-family: 'coco';
+    position: relative;
+    top: 40%;
+    color: #fff;
+}
+
+.denco-title span{
+    position: relative;
+    top: 40%;
+}
+
+.denco-title hr{
+    border-color: #4080aa !important;
+    width: 20%;
+    position: relative;
+    top: 50%;
+}
+
+#denco-adv{
+    margin-left: 27%;
+}
+
+.denco-certificate-logo{
+    float: left;
+    /* background-color: #f4511e; */
+    width: 180px;
+    margin: 30px 50px 30px 50px;
+    position: relative;
+    left: 7%;
+}
+
+#iso{
+    width: 130px;
+}
+
+.denco-certificate-logo img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.denco-certificate-logo:hover img{
+    filter: grayscale(0%);
+}
+
+.t-range{
+    width: 45%;
+    display: inline-block;
+    float: left;
+    /* background-color: khaki; */
+    margin: 2% 2% 2% 5%;
+}
+
+.t-range p{
+    text-align: justify;
+}
+
+.t-range-img{
+    /* height: 500px; */
+    float: left;
+    width: 40%;
+}
+
+.t-range-img img{
+    position: relative;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
   @media screen and (max-width: 480px){
     body, html{
         margin: 0px;
@@ -1552,6 +1555,7 @@ body{
 
     .history-text-wrap{
         width: 400px;
+        display: block;
         margin-top: -10px;
     }
 
@@ -1652,7 +1656,20 @@ body{
     }
 
     /* visimisi */
+    .misi{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
     .visi, .misi{
         width: 100%;
+    }
+
+    .visi{
+        left: 0;
+    }
+
+    .about_single{
+        margin-left: 24%;
     }
   }
