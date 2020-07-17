@@ -1414,7 +1414,11 @@ body{
     width: 100%;
     display: inline-block;
     background-color: #4080aa;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.denco-content{
+    width: 100%; display: inline-block;
 }
 
 .denco-trange hr{
@@ -1490,6 +1494,40 @@ body{
 
 .t-range-img img{
     position: relative;
+}
+
+.multidenco-desc{
+    /* background-color: chocolate; */
+    width: 80%;
+    display: inline-block;
+    /* height: 100px; */
+    margin-top: 100px;
+    margin-left: 10%;
+    color: rgb(90, 90, 90);
+}
+
+.multidenco-desc img{
+    float: left;
+}
+
+.multidenco-p{
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.multidenco-version{
+    width: 25%;
+    display: inline-block;
+    float: left;
+    margin: 2%;
+    text-align: center;
+    padding: 5px;
+    /* background-color: #b33939; */
+}
+
+.multidenco-version h5, .multidenco-version hr{
+    color: #fff !important;
+    border-color: #4080aa !important;
 }
 
 /* -------------------------------------------------------------------------------------------- */
