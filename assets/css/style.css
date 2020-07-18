@@ -1030,7 +1030,7 @@ body{
     border-color: #333 !important;
 }
 
-.product-advantage-desc img{
+.tele-icon-adv{
     width: 60px;
     float: left;
     margin-right: 10px;
@@ -1534,6 +1534,25 @@ body{
     width: 100%;
     background: url(../img/dencohappel/bg-multi.jpg) no-repeat;
     background-size: cover;
+    margin-bottom: 100px;
+}
+
+#multidenco-adv{
+    height: 350px;
+}
+
+#inverter{
+    width: 40%;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+#combicool{
+    width: 35%;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
 }
 
 /* -------------------------------------------------------------------------------------------- */
