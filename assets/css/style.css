@@ -803,7 +803,7 @@ body{
 
 .button {
     border-radius: 4px;
-    background-color: #f4511e;
+    background-color: #b33939;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -847,7 +847,7 @@ body{
 
   .montair-detail-wrapper{
     width: 1100px; 
-    height: 900px; 
+    height: 1000px; 
     margin-left: auto; 
     margin-right: auto;
     margin-top: 30px; 
@@ -1325,35 +1325,6 @@ body{
     /* background-color: aqua; */
 }
 
-.firepro-certificate-logo{
-    position: relative;
-    float: left;
-    /* background-color: #fff; */
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    margin: 10px;
-}
-
-.firepro-certificate-logo:hover img{
-    filter: grayscale(0%);
-}
-
-.firepro-certificate-logo img{
-    width: 90%;
-    /* height: 100%; */
-    filter: grayscale(100%);
-    transition: 0.5s;
-}
-
-.firepro-certificate{
-    width: 100%;
-    display: inline-block;
-    /* background-color: #b33939; */
-    margin: 50px 0px 50px 0px;
-    text-align: center;
-    position: relative;
-}
 
 #firepro-adv{
     left: 30%;
@@ -1599,17 +1570,55 @@ body{
 .text-certi {
     width: 80px;
     /* white-space: nowrap;  */
-    color: white;
+    color: #333;
     font-size: 12px;
     position: absolute;
     /* overflow: hidden; */
-    top: 50%;
-    left: 50%;
+    /* top: 50%;*/
+    left: 50%; 
+    bottom: 0;
     text-transform: capitalize;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
-  
+
+.firepro-certificate-box{
+    width: 100px; 
+    height: 150px;
+     position: relative; 
+     float: left; 
+     margin: 10px;
+}
+
+.firepro-certificate-logo{
+    position: relative;
+    float: left;
+    /* background-color: #fff; */
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 10px; /* nanti margin ini hapus */
+}
+
+.firepro-certificate-logo:hover img{
+    filter: grayscale(0%);
+}
+
+.firepro-certificate-logo img{
+    width: 90%;
+    /* height: 100%; */
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.firepro-certificate{
+    width: 100%;
+    display: inline-block;
+    /* background-color: #b33939; */
+    margin: 50px 0px 50px 0px;
+    text-align: center;
+    position: relative;
+}
 
 /* telefire */
 #telefire-product{
